@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@mipmap/back2"
+    android:layout_height="match_parent"
+    tools:context=".VitalSignsProcess">
+
+
+    <SurfaceView
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_margin="100dp"
+        android:layout_height="0dp">
+    </SurfaceView>
+
+    <ProgressBar
+        android:id="@+id/VSPB"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        android:max="26"
+        android:progress="1"
+        android:layout_marginLeft="150dp"
+        android:layout_marginBottom="50dp"
+        android:progressDrawable="@drawable/circular_progressbar" />
+
+</LinearLayout>
